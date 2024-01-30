@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "26c7273b-38a7-4db0-8e7d-b1a84589128e",
+		"name": "kby-ai-live",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2379931"
+	},
+	"item": [
+		{
+			"name": "check_liveness",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://18.221.33.238:8080/check_liveness",
+					"protocol": "http",
+					"host": [
+						"18",
+						"221",
+						"33",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"check_liveness"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check_liveness_base64",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"base64\":\"xxx\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.221.33.238:8080/check_liveness_base64",
+					"protocol": "http",
+					"host": [
+						"18",
+						"221",
+						"33",
+						"238"
+					],
+					"port": "8080",
+					"path": [
+						"check_liveness_base64"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
